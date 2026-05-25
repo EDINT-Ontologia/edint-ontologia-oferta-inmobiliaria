@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -29,6 +28,7 @@
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria.owl"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:issued>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:modified>
         <dcterms:title xml:lang="es">Ontología de Oferta Inmobiliaria Española</dcterms:title>
         <dcterms:title xml:lang="en">Spanish Real Estate Listing Ontology</dcterms:title>
