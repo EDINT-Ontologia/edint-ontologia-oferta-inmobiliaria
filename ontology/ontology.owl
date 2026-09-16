@@ -14,16 +14,30 @@
      xmlns:edintcat="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
      xmlns:edintinm="https://edint.es/def/oferta-inmobiliaria#"
      xmlns:edintkos-uso="http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"
-     xmlns:edintkos-trans="https://edint.es/kos/RealEstateTransactionType/">
-    <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
+     xmlns:edintkos-trans="https://edint.es/kos/RealEstateTransactionType/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
         <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria#0.1.0"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:created>
-        <dcterms:creator xml:lang="es">Daniel Doña</dcterms:creator>
-        <dcterms:creator>Edna Ruckhaus</dcterms:creator>
-        <dcterms:creator>Lucía Sánchez</dcterms:creator>
-        <dcterms:creator>Maria del Socorro Bernardos</dcterms:creator>
-        <dcterms:creator>Oscar Corcho</dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Daniel Doña</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Edna Ruckhaus</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Lucía Sánchez</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Maria del Socorro Bernardos</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Oscar Corcho</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:description>
         <dcterms:hasFormat rdf:resource="https://edint.es/def/oferta-inmobiliaria.owl"/>
@@ -42,6 +56,9 @@
         <dcterms:abstract xml:lang="es">Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:abstract>
         <dcterms:abstract xml:lang="en">EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.</dcterms:abstract>
     </owl:Ontology>
+    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </foaf:Organization>
     
 
 
