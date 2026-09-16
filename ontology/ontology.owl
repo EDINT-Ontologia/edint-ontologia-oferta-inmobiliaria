@@ -10,13 +10,13 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:edintcat="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
+     xmlns:edintcat="https://edint.es/def/catastro#"
      xmlns:edintinm="https://edint.es/def/oferta-inmobiliaria#"
      xmlns:edintkos-uso="http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"
      xmlns:edintkos-trans="https://edint.es/kos/RealEstateTransactionType/">
     <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
         <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria#0.1.0"/>
-        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+        <owl:imports rdf:resource="https://edint.es/def/catastro#"/>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:created>
         <dcterms:creator xml:lang="es">Daniel Doña</dcterms:creator>
         <dcterms:creator>Edna Ruckhaus</dcterms:creator>
@@ -163,8 +163,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel"/>
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -233,15 +233,15 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel -->
+    <!-- https://edint.es/def/catastro#CadastralParcel -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel"/>
+    <owl:Class rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty -->
+    <!-- https://edint.es/def/catastro#CadastralProperty -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
+    <owl:Class rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
     
 
 
