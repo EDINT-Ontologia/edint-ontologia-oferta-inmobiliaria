@@ -1,4 +1,4 @@
-# Ontología de Oferta Inmobiliaria Española
+# Ontología EDINT de Oferta Inmobiliaria Española
 
 Esta ontología permite representar el dominio de las ofertas inmobiliarias en el contexto español, centrada en anuncios inmobiliarios (venta, alquiler, traspaso) y su relación con entidades catastrales.
 

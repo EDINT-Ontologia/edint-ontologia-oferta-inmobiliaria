@@ -10,6 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
      xmlns:edintcat="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
      xmlns:edintinm="https://edint.es/def/oferta-inmobiliaria#"
      xmlns:edintkos-uso="http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"
@@ -30,11 +31,16 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:issued>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:modified>
-        <dcterms:title xml:lang="es">Ontología de Oferta Inmobiliaria Española</dcterms:title>
-        <dcterms:title xml:lang="en">Spanish Real Estate Listing Ontology</dcterms:title>
+        <dcterms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</dcterms:title>
+        <dcterms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintinm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://edint.es/def/oferta-inmobiliaria#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.1.0</owl:versionInfo>
+        <dcterms:publisher rdf:resource="https://www.femp.es/"/>
+        <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revision: v0.1.0.</dcterms:bibliographicCitation>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <dcterms:abstract xml:lang="es">Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:abstract>
+        <dcterms:abstract xml:lang="en">EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.</dcterms:abstract>
     </owl:Ontology>
     
 
