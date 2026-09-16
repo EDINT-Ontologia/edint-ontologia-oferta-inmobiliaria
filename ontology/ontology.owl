@@ -13,7 +13,7 @@
      xmlns:edintcat="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
      xmlns:edintinm="https://edint.es/def/oferta-inmobiliaria#"
      xmlns:edintkos-uso="http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"
-     xmlns:edintkos-trans="http://vocab.linkeddata.es/datosabiertos/kos/edint/transaction-type/">
+     xmlns:edintkos-trans="https://edint.es/kos/RealEstateTransactionType/">
     <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
         <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria#0.1.0"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>

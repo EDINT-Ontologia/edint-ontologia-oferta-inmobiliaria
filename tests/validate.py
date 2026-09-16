@@ -22,9 +22,9 @@ import pyshacl
 # Namespaces
 EDINTINM = Namespace("https://edint.es/def/oferta-inmobiliaria#")
 EDINTCAT = Namespace("https://edint.github.io/edint-ontologia-catastro/ontology/catastro#")
-EDINTKOS = Namespace("http://vocab.linkeddata.es/datosabiertos/kos/edint/")
-EDINTKOS_USE = Namespace("http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/")
-EDINTKOS_TRANSACTION = Namespace("http://vocab.linkeddata.es/datosabiertos/kos/edint/transaction-type/")
+EDINTKOS = Namespace("https://edint.es/kos/")
+EDINTKOS_USE = Namespace("https://edint.es/kos/RealEstateUse/")
+EDINTKOS_TRANSACTION = Namespace("https://edint.es/kos/RealEstateTransactionType/")
 DCTERMS = Namespace("http://purl.org/dc/terms/")
 CC = Namespace("http://creativecommons.org/ns#")
 VANN = Namespace("http://purl.org/vocab/vann/")

@@ -4,16 +4,16 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintkos: <https://edint.es/kos/> .
 
-@prefix edintkos-uso: <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/> .
+@prefix edintkos-uso: <https://edint.es/kos/RealEstateUse/> .
 
 
 # =============================================================================
 # CONCEPT SCHEME
 # =============================================================================
 
-edintkos:Uso a skos:ConceptScheme ;
+edintkos:RealEstateUse a skos:ConceptScheme ;
     dct:issued "2026-04-14"^^xsd:date ;
     dct:modified "2026-04-14"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -34,9 +34,9 @@ edintkos-uso:vivienda a skos:Concept ;
     skos:prefLabel "Dwelling"@en ;
     skos:definition "Uso residencial para vivienda habitual o segunda residencia."@es ;
     skos:definition "Residential use for habitual or second home."@en ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:RealEstateUse ;
     skos:notation "V1A" ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:RealEstateUse .
 
 edintkos-uso:local-comercial a skos:Concept ;
     rdfs:label "Local Comercial"@es ;
@@ -45,9 +45,9 @@ edintkos-uso:local-comercial a skos:Concept ;
     skos:prefLabel "Commercial Local"@en ;
     skos:definition "Uso comercial para establecimientos de venta al público."@es ;
     skos:definition "Commercial use for retail establishments."@en ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:RealEstateUse ;
     skos:notation "V2A" ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:RealEstateUse .
 
 edintkos-uso:oficina a skos:Concept ;
     rdfs:label "Oficina"@es ;
@@ -56,9 +56,9 @@ edintkos-uso:oficina a skos:Concept ;
     skos:prefLabel "Office"@en ;
     skos:definition "Uso de oficinas y despachos profesionales."@es ;
     skos:definition "Office and professional practice use."@en ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:RealEstateUse ;
     skos:notation "V2B" ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:RealEstateUse .
 
 edintkos-uso:nave-industrial a skos:Concept ;
     rdfs:label "Nave Industrial"@es ;
@@ -67,9 +67,9 @@ edintkos-uso:nave-industrial a skos:Concept ;
     skos:prefLabel "Industrial Warehouse"@en ;
     skos:definition "Uso industrial para naves y almacenes."@es ;
     skos:definition "Industrial use for warehouses and storage facilities."@en ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:RealEstateUse ;
     skos:notation "V2C" ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:RealEstateUse .
 
 edintkos-uso:solar a skos:Concept ;
     rdfs:label "Solar"@es ;
@@ -78,6 +78,6 @@ edintkos-uso:solar a skos:Concept ;
     skos:prefLabel "Plot"@en ;
     skos:definition "Terreno sin edificar, susceptible de construcción."@es ;
     skos:definition "Unbuilt land, suitable for construction."@en ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:RealEstateUse ;
     skos:notation "V4" ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:RealEstateUse .

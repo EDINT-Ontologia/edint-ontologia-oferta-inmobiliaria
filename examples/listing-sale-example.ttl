@@ -3,8 +3,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix catastro: <https://edint.github.io/edint-ontologia-catastro/ontology/catastro#> .
-@prefix edintkos-uso: <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/> .
-@prefix edintkos-trans: <http://vocab.linkeddata.es/datosabiertos/kos/edint/transaction-type/> .
+@prefix edintkos-uso: <https://edint.es/kos/RealEstateUse/> .
+@prefix edintkos-trans: <https://edint.es/kos/RealEstateTransactionType/> .
 @prefix ex: <http://example.org/> .
 
 # Sale Listing Example: Residential Dwelling
