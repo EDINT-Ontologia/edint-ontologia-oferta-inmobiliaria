@@ -20,7 +20,7 @@ import pyshacl
 
 
 # Namespaces
-EDINTINM = Namespace("http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/")
+EDINTINM = Namespace("https://edint.es/def/oferta-inmobiliaria#")
 EDINTCAT = Namespace("https://edint.github.io/edint-ontologia-catastro/ontology/catastro#")
 EDINTKOS = Namespace("https://edint.es/kos/")
 EDINTKOS_USE = Namespace("https://edint.es/kos/RealEstateUse/")
