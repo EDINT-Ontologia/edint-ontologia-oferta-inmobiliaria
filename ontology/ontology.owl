@@ -25,7 +25,7 @@
         <dcterms:creator>Oscar Corcho</dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:description>
-        <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria.owl"/>
+        <dcterms:hasFormat rdf:resource="https://edint.es/def/oferta-inmobiliaria.owl"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:issued>
