@@ -250,9 +250,6 @@
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
     
 
 
@@ -271,7 +268,7 @@
     <!-- https://edint.es/def/oferta-inmobiliaria#RealEstateListing -->
 
     <owl:Class rdf:about="https://edint.es/def/oferta-inmobiliaria#RealEstateListing">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:subClassOf rdf:nodeID="b0"/>
         <rdfs:comment xml:lang="en">A real estate listing representing an offer for a property (sale, rent, or transfer). Each listing has a unique identifier and describes the property type, transaction type, and current status.</rdfs:comment>
         <rdfs:comment xml:lang="es">Un anuncio inmobiliario que representa una oferta de un inmueble (venta, alquiler o traspaso). Cada anuncio tiene un identificador único y describe el tipo de inmueble, tipo de transacción y estado actual.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
@@ -284,8 +281,11 @@
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:Description>
+    <rdf:Description rdf:nodeID="b0">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+        <owl:onProperty rdf:resource="https://edint.es/def/oferta-inmobiliaria#propertyType"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </rdf:Description>
 </rdf:RDF>
 
