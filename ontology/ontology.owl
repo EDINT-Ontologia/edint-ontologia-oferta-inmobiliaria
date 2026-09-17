@@ -17,7 +17,6 @@
      xmlns:edintkos-trans="https://edint.es/kos/RealEstateTransactionType/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
         <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria/0.2.1"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
-        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:created>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -41,15 +40,15 @@
         <dcterms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:description>
         <dcterms:hasFormat rdf:resource="https://edint.es/def/oferta-inmobiliaria.owl"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:issued>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:modified>
         <dcterms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintinm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://edint.es/def/oferta-inmobiliaria#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</dcterms:modified>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0"/>
         <dcterms:publisher rdf:parseType="Resource">
             <foaf:name>FEMP</foaf:name>
