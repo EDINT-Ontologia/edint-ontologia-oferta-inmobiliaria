@@ -57,7 +57,8 @@
             <foaf:homepage rdf:resource="https://www.femp.es/"/>
             <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
         </dcterms:publisher>
-        <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revision: v0.1.0.</dcterms:bibliographicCitation>
+        <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+        <dcterms:bibliographicCitation xml:lang="en">EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
         <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
         <dcterms:abstract xml:lang="es">Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:abstract>
         <dcterms:abstract xml:lang="en">EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.</dcterms:abstract>
