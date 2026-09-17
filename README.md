@@ -13,7 +13,7 @@ El propósito de esta ontología es modelar las ofertas inmobiliarias en el cont
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de esta ontología es `edintinm`. Se publica en el espacio de nombres: https://edint.es/def/oferta-inmobiliaria#
+El prefijo de esta ontología es `edintinm` y se publica bajo el espacio de nombres https://edint.es/def/oferta-inmobiliaria#
 
 # Modelo conceptual (Ontology conceptualization)
 
