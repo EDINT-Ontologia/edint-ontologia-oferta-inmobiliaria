@@ -1,5 +1,8 @@
 # Ontología de Oferta Inmobiliaria Española
 
+![Prefijo](https://img.shields.io/badge/prefijo-edintinm-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
+
 Esta ontología permite representar el dominio de las ofertas inmobiliarias en el contexto español, centrada en anuncios inmobiliarios (venta, alquiler, traspaso) y su relación con entidades catastrales.
 
 Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
