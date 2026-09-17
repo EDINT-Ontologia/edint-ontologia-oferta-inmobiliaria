@@ -298,7 +298,14 @@
         <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
         <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
         <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-    </owl:Ontology>
+            <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+                <rdfs:label xml:lang="es">Catastro Español (edintcat)</rdfs:label>
+                <rdfs:label xml:lang="en">Spanish Cadastre (edintcat)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
+</owl:Ontology>
 </rdf:RDF>
 
 
