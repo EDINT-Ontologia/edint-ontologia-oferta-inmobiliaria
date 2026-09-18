@@ -1,10 +1,81 @@
 [ {
   "@id" : "_:genid1",
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/_:genid-nodeid-node1jmddjsqex2"
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Edna Ruckhaus"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#propertyType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid2",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Daniel Doña"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Lucía Sánchez"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Maria del Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Oscar Corcho"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://www.femp.es/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "FEMP"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@value" : "Federación Española de Municipios y Provincias"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spanish Cadastre (edintcat)"
+  }, {
+    "@language" : "es",
+    "@value" : "Catastro Español (edintcat)"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/"
+  } ]
+}, {
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -14,19 +85,11 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid5",
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/_:genid-nodeid-node1jmddjsqex3"
-  } ]
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "_:genid6",
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -49,6 +112,9 @@
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -58,29 +124,36 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/",
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology."
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español."
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@language" : "en",
+    "@value" : "EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1."
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revisión: v0.2.1."
+  } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2026-04-14"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "es",
-    "@value" : "Daniel Doña"
+    "@id" : "_:genid1"
   }, {
-    "@value" : "Edna Ruckhaus"
+    "@id" : "_:genid2"
   }, {
-    "@value" : "Lucía Sánchez"
+    "@id" : "_:genid3"
   }, {
-    "@value" : "Maria del Socorro Bernardos"
+    "@id" : "_:genid4"
   }, {
-    "@value" : "Oscar Corcho"
+    "@id" : "_:genid5"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -89,45 +162,97 @@
     "@language" : "es",
     "@value" : "Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español."
   } ],
-  "http://purl.org/dc/terms/hasFormat" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria.owl"
-  } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-04-17"
+    "@value" : "2026-05-26"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-04-17"
+    "@value" : "2026-05-26"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "_:genid6"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@language" : "es",
-    "@value" : "Ontología de Oferta Inmobiliaria Española"
-  }, {
     "@language" : "en",
-    "@value" : "Spanish Real Estate Listing Ontology"
+    "@value" : "EDINT Spanish Real Estate Listing Ontology"
+  }, {
+    "@language" : "es",
+    "@value" : "Ontología EDINT de Oferta Inmobiliaria Española"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "edintinm"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Oferta Inmobiliaria"
+  }, {
+    "@language" : "en",
+    "@value" : "Real Estate Listings"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/"
   } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/0.1.0"
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
+    "@value" : "0.2.1"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria"
+  } ],
+  "https://schema.org/creativeWorkStatus" : [ {
+    "@language" : "en",
+    "@value" : "Ontology Specification"
+  } ],
+  "https://schema.org/funding" : [ {
+    "@value" : "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)"
+  } ],
+  "https://w3id.org/widoco/vocab#jsonldSerialization" : [ {
+    "@value" : "ontology.jsonld"
+  } ],
+  "https://w3id.org/widoco/vocab#ntSerialization" : [ {
+    "@value" : "ontology.nt"
+  } ],
+  "https://w3id.org/widoco/vocab#rdfxmlSerialization" : [ {
+    "@value" : "ontology.rdf"
+  } ],
+  "https://w3id.org/widoco/vocab#turtleSerialization" : [ {
+    "@value" : "ontology.ttl"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyLabel" : [ {
+    "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/RealEstateListing",
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://edint.es/def/oferta-inmobiliaria#RealEstateListing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -137,7 +262,7 @@
     "@value" : "Un anuncio inmobiliario que representa una oferta de un inmueble (venta, alquiler o traspaso). Cada anuncio tiene un identificador único y describe el tipo de inmueble, tipo de transacción y estado actual."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -147,16 +272,10 @@
     "@value" : "Real Estate Listing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+    "@id" : "_:genid11"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/_:genid-nodeid-node1jmddjsqex2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/_:genid-nodeid-node1jmddjsqex3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/isActive",
+  "@id" : "https://edint.es/def/oferta-inmobiliaria#isActive",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -166,10 +285,10 @@
     "@value" : "Propiedad que indica si el anuncio inmobiliario está actualmente activo (verdadero) o inactivo (falso)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/RealEstateListing"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#RealEstateListing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -182,7 +301,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/propertyType",
+  "@id" : "https://edint.es/def/oferta-inmobiliaria#propertyType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -192,10 +311,10 @@
     "@value" : "Propiedad que indica el tipo de inmueble en el anuncio (ej. local, oficina, nave, vivienda, solar). Reutiliza el vocabulario de usos del Catastro Español."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/RealEstateListing"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#RealEstateListing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -206,12 +325,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/refersToCadastralEntity",
+  "@id" : "https://edint.es/def/oferta-inmobiliaria#refersToCadastralEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -221,10 +337,10 @@
     "@value" : "Relationship linking a real estate listing to its corresponding cadastral entity (parcel or property). This allows access to cadastral information such as use, class, address, and reference through the Cadastre ontology. For land-only sales, it links to a CadastralParcel. For buildings or units, it links to a CadastralProperty."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/RealEstateListing"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#RealEstateListing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -234,10 +350,10 @@
     "@value" : "se refiere a entidad catastral"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid2"
+    "@id" : "_:genid8"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/transactionType",
+  "@id" : "https://edint.es/def/oferta-inmobiliaria#transactionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -247,10 +363,10 @@
     "@value" : "Propiedad que indica el tipo de transacción inmobiliaria (venta, alquiler o traspaso). Utiliza el vocabulario controlado de tipos de transacción."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/RealEstateListing"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#RealEstateListing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/"
+    "@id" : "https://edint.es/def/oferta-inmobiliaria#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -261,17 +377,40 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "_:genid5"
   } ]
 }, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+  "@id" : "https://oeg.fi.upm.es/",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Ontology Engineering Group, UPM"
+  } ]
 }, {
-  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@id" : "https://schema.org/affiliation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/creativeWorkStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/funding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#jsonldSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#ntSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#rdfxmlSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#turtleSerialization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#vocabularyIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#vocabularyLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
