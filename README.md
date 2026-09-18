@@ -8,19 +8,19 @@ Esta ontología permite representar el dominio de las ofertas inmobiliarias en e
 
 Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
-# Propósito y alcance de la ontología (Purpose and scope of the ontology)
+## Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
 El propósito de esta ontología es modelar las ofertas inmobiliarias en el contexto español para habilitar la interoperabilidad de datos en el ámbito de la oferta inmobiliaria. El alcance se limita a anuncios inmobiliarios, tipos de inmueble, tipos de transacción y su relación con entidades catastrales. Quedan fuera del alcance aspectos como valoración de inmuebles, procesos de intermediación, contratos y datos financieros.
 
-# Prefijo y espacio de nombres (Prefix and namespace)
+## Prefijo y espacio de nombres (Prefix and namespace)
 
 El prefijo de esta ontología es `edintinm` y se publica bajo el espacio de nombres https://edint.es/def/oferta-inmobiliaria#
 
-# Modelo conceptual (Ontology conceptualization)
+## Modelo conceptual (Ontology conceptualization)
 
 ![Diagrama del modelo conceptual](diagrams/diagrama.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 | Carpeta | Descripción |
 |--------|--------------|
@@ -32,11 +32,11 @@ El prefijo de esta ontología es `edintinm` y se publica bajo el espacio de nomb
 | **requirements/** | Contiene todos los documentos utilizados para definir los requisitos de la ontología: ejemplos de datos, preguntas de competencia, requisitos funcionales, casos de uso, etc. |
 | **shapes/**       | Contiene los SHACL shapes utilizadas para definir y validar las restricciones de la ontología.                                                                                |
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
