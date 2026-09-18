@@ -44,6 +44,8 @@
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</dcterms:title>
+        <rdfs:label xml:lang="es">Oferta Inmobiliaria</rdfs:label>
+        <rdfs:label xml:lang="en">Real Estate Listings</rdfs:label>
         <vann:preferredNamespacePrefix>edintinm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://edint.es/def/oferta-inmobiliaria#</vann:preferredNamespaceUri>
         <owl:versionInfo>0.2.1</owl:versionInfo>
