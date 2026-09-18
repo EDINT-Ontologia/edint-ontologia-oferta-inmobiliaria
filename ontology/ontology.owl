@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema="https://schema.org/"
      xmlns:edintcat="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
      xmlns:edintinm="https://edint.es/def/oferta-inmobiliaria#"
      xmlns:edintkos-uso="http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"
@@ -40,14 +40,13 @@
         </dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:description>
-        <dcterms:hasFormat rdf:resource="https://edint.es/def/oferta-inmobiliaria.owl"/>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</dcterms:title>
         <rdfs:label xml:lang="es">Oferta Inmobiliaria</rdfs:label>
         <rdfs:label xml:lang="en">Real Estate Listings</rdfs:label>
         <vann:preferredNamespacePrefix>edintinm</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://edint.es/def/oferta-inmobiliaria#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</dcterms:created>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</dcterms:issued>
