@@ -1,52 +1,50 @@
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/oferta-inmobiliaria/0.2.1> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/datosabiertos/def/catastro/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/abstract> "EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology."@en .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/abstract> "Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español."@es .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1."@en .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revisión: v0.2.1."@es .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/created> "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/creator> _:genid1 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/datosabiertos/def/catastro/> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/abstract> "EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/abstract> "Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revisión: v0.2.1."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/created> "2026-04-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid1 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
-_:genid1 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/creator> _:genid2 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
-_:genid2 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/creator> _:genid3 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
-_:genid3 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/creator> _:genid4 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/creator> _:genid4 .
+_:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" .
-_:genid4 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/creator> _:genid5 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/creator> _:genid5 .
+_:genid5 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid5 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
-_:genid5 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/description> "Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology."@en .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/description> "Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español."@es .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/hasFormat> <https://edint.es/def/oferta-inmobiliaria.owl> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/issued> "2026-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/modified> "2026-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/publisher> _:genid6 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/description> "Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/description> "Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/issued> "2026-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/modified> "2026-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/publisher> _:genid6 .
+_:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 _:genid6 <http://xmlns.com/foaf/0.1/name> "FEMP" .
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
-_:genid6 <http://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/title> "EDINT Spanish Real Estate Listing Ontology"@en .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/dc/terms/title> "Ontología EDINT de Oferta Inmobiliaria Española"@es .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintinm" .
-<https://edint.es/def/oferta-inmobiliaria#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/oferta-inmobiliaria#" .
-<https://edint.es/def/oferta-inmobiliaria#> <http://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://schema.org/creativeWorkStatus> "Ontology Specification"@en .
-<https://edint.es/def/oferta-inmobiliaria#> <http://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/2000/01/rdf-schema#label> "Oferta Inmobiliaria"@es .
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/2000/01/rdf-schema#label> "Real Estate Listings"@en .
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0> .
-<https://edint.es/def/oferta-inmobiliaria#> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
-<https://edint.es/def/oferta-inmobiliaria#> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
-<https://edint.es/def/oferta-inmobiliaria#> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
-<https://edint.es/def/oferta-inmobiliaria#> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
-<https://edint.es/def/oferta-inmobiliaria#> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
-<https://edint.es/def/oferta-inmobiliaria#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/title> "EDINT Spanish Real Estate Listing Ontology"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/dc/terms/title> "Ontología EDINT de Oferta Inmobiliaria Española"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintinm" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/oferta-inmobiliaria#> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://www.w3.org/2000/01/rdf-schema#label> "Oferta Inmobiliaria"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://www.w3.org/2000/01/rdf-schema#label> "Real Estate Listings"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://schema.org/creativeWorkStatus> "Ontology Specification"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
 _:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/catastro/> .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Spanish Cadastre (edintcat)"@en .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Catastro Español (edintcat)"@es .
@@ -98,18 +96,6 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Catastro Español (edintc
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/affiliation
-<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/codeRepository
-<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/creativeWorkStatus
-<http://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/funding
-<http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/2002/07/owl#qualifiedCardinality
 <http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -118,6 +104,18 @@ _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Catastro Español (edintc
 # 
 # http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/funding
+<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/widoco/vocab#jsonldSerialization
 <https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
