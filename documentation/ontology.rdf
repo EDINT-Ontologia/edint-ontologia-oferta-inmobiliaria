@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://edint.es/def/oferta-inmobiliaria#"
+     xml:base="https://edint.es/def/oferta-inmobiliaria"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
+        <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria/0.2.1"/>
+        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+        <terms:abstract xml:lang="en">EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.</terms:abstract>
+        <terms:abstract xml:lang="es">Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</terms:abstract>
+        <terms:bibliographicCitation xml:lang="en">EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española. EDINT. Revisión: v0.2.1.</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-14</terms:created>
+        <terms:creator rdf:nodeID="genid1"/>
+        <terms:creator rdf:nodeID="genid2"/>
+        <terms:creator rdf:nodeID="genid3"/>
+        <terms:creator rdf:nodeID="genid4"/>
+        <terms:creator rdf:nodeID="genid5"/>
+        <terms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</terms:description>
+        <terms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</terms:description>
+        <terms:hasFormat rdf:resource="https://edint.es/def/oferta-inmobiliaria.owl"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</terms:modified>
+        <terms:publisher rdf:nodeID="genid6"/>
+        <terms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</terms:title>
+        <terms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</terms:title>
+        <vann:preferredNamespacePrefix>edintinm</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://edint.es/def/oferta-inmobiliaria#</vann:preferredNamespaceUri>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
+        <rdfs:label xml:lang="es">Oferta Inmobiliaria</rdfs:label>
+        <rdfs:label xml:lang="en">Real Estate Listings</rdfs:label>
+        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0"/>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
+        <vocab:jsonldSerialization>ontology.jsonld</vocab:jsonldSerialization>
+        <vocab:ntSerialization>ontology.nt</vocab:ntSerialization>
+        <vocab:rdfxmlSerialization>ontology.rdf</vocab:rdfxmlSerialization>
+        <vocab:turtleSerialization>ontology.ttl</vocab:turtleSerialization>
+        <vocab:vocabularyLabel rdf:nodeID="genid7"/>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Edna Ruckhaus</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Daniel Doña</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid3">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Lucía Sánchez</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid4">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Maria del Socorro Bernardos</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        <foaf:name>Oscar Corcho</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
+        <foaf:homepage rdf:resource="https://www.femp.es/"/>
+        <foaf:name>FEMP</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <rdfs:label xml:lang="es">Catastro Español (edintcat)</rdfs:label>
+        <rdfs:label xml:lang="en">Spanish Cadastre (edintcat)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/affiliation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+    
+
+
+    <!-- http://schema.org/codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
+    
+
+
+    <!-- http://schema.org/creativeWorkStatus -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- http://schema.org/funding -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/funding"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://edint.es/def/oferta-inmobiliaria#propertyType -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/oferta-inmobiliaria#propertyType">
+        <rdfs:domain rdf:resource="https://edint.es/def/oferta-inmobiliaria#RealEstateListing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Property indicating the type of real estate property in the listing (e.g., local, office, warehouse, dwelling, plot). Reuses the Spanish Cadastre use vocabulary.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Propiedad que indica el tipo de inmueble en el anuncio (ej. local, oficina, nave, vivienda, solar). Reutiliza el vocabulario de usos del Catastro Español.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
+        <rdfs:label xml:lang="en">Property Type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de Inmueble</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/oferta-inmobiliaria#refersToCadastralEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/oferta-inmobiliaria#refersToCadastralEntity">
+        <rdfs:domain rdf:resource="https://edint.es/def/oferta-inmobiliaria#RealEstateListing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel"/>
+                    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Relación que vincula un anuncio inmobiliario con su entidad catastral correspondiente (parcela o inmueble). Esto permite acceder a información catastral como el uso, la clase, la dirección y la referencia a través de la ontología del Catastro. Para ventas de solo terreno, se enlaza a una CadastralParcel. Para edificios o unidades, se enlaza a una CadastralProperty.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship linking a real estate listing to its corresponding cadastral entity (parcel or property). This allows access to cadastral information such as use, class, address, and reference through the Cadastre ontology. For land-only sales, it links to a CadastralParcel. For buildings or units, it links to a CadastralProperty.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
+        <rdfs:label xml:lang="en">refers to cadastral entity</rdfs:label>
+        <rdfs:label xml:lang="es">se refiere a entidad catastral</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/oferta-inmobiliaria#transactionType -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/oferta-inmobiliaria#transactionType">
+        <rdfs:domain rdf:resource="https://edint.es/def/oferta-inmobiliaria#RealEstateListing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Property indicating type of real estate transaction (sale, rent, or transfer). Uses the transaction type controlled vocabulary.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Propiedad que indica el tipo de transacción inmobiliaria (venta, alquiler o traspaso). Utiliza el vocabulario controlado de tipos de transacción.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
+        <rdfs:label xml:lang="es">Tipo de Transacción</rdfs:label>
+        <rdfs:label xml:lang="en">Transaction Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://edint.es/def/oferta-inmobiliaria#isActive -->
+
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/oferta-inmobiliaria#isActive">
+        <rdfs:domain rdf:resource="https://edint.es/def/oferta-inmobiliaria#RealEstateListing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Property indicating whether the real estate listing is currently active (true) or inactive (false).</rdfs:comment>
+        <rdfs:comment xml:lang="es">Propiedad que indica si el anuncio inmobiliario está actualmente activo (verdadero) o inactivo (falso).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
+        <rdfs:label xml:lang="es">está activo</rdfs:label>
+        <rdfs:label xml:lang="en">is active</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel -->
+
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty -->
+
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://edint.es/def/oferta-inmobiliaria#RealEstateListing -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/oferta-inmobiliaria#RealEstateListing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://edint.es/def/oferta-inmobiliaria#propertyType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A real estate listing representing an offer for a property (sale, rent, or transfer). Each listing has a unique identifier and describes the property type, transaction type, and current status.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un anuncio inmobiliario que representa una oferta de un inmueble (venta, alquiler o traspaso). Cada anuncio tiene un identificador único y describe el tipo de inmueble, tipo de transacción y estado actual.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
+        <rdfs:label xml:lang="es">Anuncio Inmobiliario</rdfs:label>
+        <rdfs:label xml:lang="en">Real Estate Listing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

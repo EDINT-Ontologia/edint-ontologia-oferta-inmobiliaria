@@ -1,6 +1,4 @@
-<h2 id="desc" class="list">inmobiliaria: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-
-
+<h2 id="desc" class="list">Real Estate Listings: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div style="padding: 25px; background-color: white; width: 100%; box-sizing: border-box; overflow: hidden;">
     <a href="images/diagram.png" target="_blank" style="display: block;">
         <img src="images/diagram.png" style="width: 100%; height: auto; display: block;"/>
@@ -9,7 +7,7 @@
 
 The real estate ontology defines a single main class: <a href="#RealEstateListing">Real Estate Listing</a> (<code>RealEstateListing</code>), which represents a property offer on the market, whether for sale, rent, or transfer. Each listing has a unique identifier and describes the property type, the type of real estate transaction, and its current status (active or inactive). This ontology reuses GeoSPARQL for geospatial support and integrates with the <a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/" target="_blank">Spanish Cadastre ontology</a> to link listings with their corresponding cadastral entities.
 
-Real estate listings are described through three object properties: <a href="#propertyType">property type</a> (<code>propertyType</code>), which indicates the category of the property (dwelling, commercial local, office, industrial warehouse, or plot) and has as its range the SKOS concept scheme <a href="http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/" target="_blank">Spanish Cadastre Property Uses</a>; <a href="#transactionType">transaction type</a> (<code>transactionType</code>), which specifies whether the offer is a sale, rent, or transfer, and has as its range the SKOS concept scheme <a href="http://vocab.linkeddata.es/datosabiertos/kos/edint/transaction-type/" target="_blank">Real Estate Transaction Types</a>; and <a href="#refersToCadastralEntity">refers to cadastral entity</a> (<code>refersToCadastralEntity</code>), which links the listing to its corresponding cadastral entity, which can be a <a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel" target="_blank">CadastralParcel</a> (cadastral parcel) for unbuilt land, or a <a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty" target="_blank">CadastralProperty</a> (cadastral property) for buildings or real estate units. In addition, listings are described with two data properties: <a href="#http://purl.org/dc/terms/identifier">identifier</a> (<code>identifier</code>), which provides a unique identifier for each listing, and <a href="#isActive">is active</a> (<code>isActive</code>), which indicates whether the real estate listing is currently active (true) or inactive (false).
+Real estate listings are described through three object properties: <a href="#propertyType">property type</a> (<code>propertyType</code>), which indicates the category of the property (dwelling, commercial local, office, industrial warehouse, or plot) and has as its range the SKOS concept scheme <a href="https://edint.es/kos/uso/" target="_blank">Spanish Cadastre Property Uses</a>; <a href="#transactionType">transaction type</a> (<code>transactionType</code>), which specifies whether the offer is a sale, rent, or transfer, and has as its range the SKOS concept scheme <a href="https://edint.es/kos/transaction-type/" target="_blank">Real Estate Transaction Types</a>; and <a href="#refersToCadastralEntity">refers to cadastral entity</a> (<code>refersToCadastralEntity</code>), which links the listing to its corresponding cadastral entity, which can be a <a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel" target="_blank">CadastralParcel</a> (cadastral parcel) for unbuilt land, or a <a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty" target="_blank">CadastralProperty</a> (cadastral property) for buildings or real estate units. In addition, listings are described with two data properties: <a href="#http://purl.org/dc/terms/identifier">identifier</a> (<code>identifier</code>), which provides a unique identifier for each listing, and <a href="#isActive">is active</a> (<code>isActive</code>), which indicates whether the real estate listing is currently active (true) or inactive (false).
 
 An example of an entity defined by the ontology could be the following:
 
@@ -22,9 +20,9 @@ An example of an entity defined by the ontology could be the following:
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
-@prefix edintinm: <http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/> .
-@prefix edintkos-uso: <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/> .
-@prefix edintkos-trans: <http://vocab.linkeddata.es/datosabiertos/kos/edint/transaction-type/> .
+@prefix edintinm: <https://edint.es/def/oferta-inmobiliaria#> .
+@prefix edintkos-uso: <https://edint.es/kos/uso/> .
+@prefix edintkos-trans: <https://edint.es/kos/transaction-type/> .
 @prefix catastro: <https://edint.github.io/edint-ontologia-catastro/ontology/catastro#> .
 @prefix ex: <http://example.org/> .
 

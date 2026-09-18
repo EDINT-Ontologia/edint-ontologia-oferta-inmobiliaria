@@ -6,10 +6,6 @@
 <link rel="stylesheet" href="resources/rec.css" media="screen"/>
 <link rel="stylesheet" href="resources/extra.css" media="screen"/>
 <link rel="stylesheet" href="resources/owl.css" media="screen"/>
-<link rel="stylesheet" href="resources/codemirror.css" media="screen">
-<script src="resources/codemirror.js"></script>
-<script src="resources/matchbrackets.js"></script>
-<script src="resources/turtle.js"></script>
 <link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
 <link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="resources/slider.css" media="screen"/>
@@ -17,17 +13,23 @@
 <script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
 	<dark-mode-toggle class="slider"></dark-mode-toggle>
 </div>
-<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Ontología EDINT del Catastro Español</title>
+<link rel="icon" type="image/png" href="resources/rdf.icon"/><link rel="stylesheet" href="resources/codemirror.css" media="screen"/>
+<script src="resources/codemirror.js"></script>
+<script src="resources/matchbrackets.js"></script>
+<script src="resources/turtle.js"></script>
+ <title>EDINT Spanish Real Estate Listing Ontology</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/catastro/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/catastro/","name":"Ontología EDINT del Catastro Español", "headline":"Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.", "dateReleased":"Date created", "dateModified":"Date modified", "version":"0.1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Daniel Doña"},{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Lucía Sánchez"},{"@type":"Person","name":"Maria del Socorro Bernardos"},{"@type":"Person","name":"Oscar Corcho"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://edint.es/def/oferta-inmobiliaria#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://edint.es/def/oferta-inmobiliaria#","name":"EDINT Spanish Real Estate Listing Ontology", "headline":"EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.", "dateReleased":"2026-04-14", "dateModified":"2026-05-26", "version":"0.2.1", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria", "author":[{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Daniel Doña"},{"@type":"Person","name":"Lucía Sánchez"},{"@type":"Person","name":"Maria del Socorro Bernardos"},{"@type":"Person","name":"Oscar Corcho"}]}</script>
 
 <script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/marked@18.0.1/lib/marked.umd.min.js"></script> 
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.14.0/+esm';mermaid.initialize({startOnLoad:false});window.mermaid=mermaid;</script> 
     <script> 
 function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+  jQuery(".markdown").each(function(el){var t=jQuery(this);if(t.find("pre,textarea,script,table,figure").length>0){return;}t.after(marked.parse(t.html())).remove()});
+  if (typeof window.mermaid !== 'undefined') { window.mermaid.run({ querySelector: 'pre code.language-mermaid' }); }
 	var hash = location.hash;
 	if($(hash).offset()!=null){
 	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
@@ -60,13 +62,16 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#nstable").load("sections/ns-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      var loads = [];
+      function _ls(sel,url){var d=$.Deferred();$(sel).load(url,function(){d.resolve();});return d.promise();}
+      loads.push(_ls("#abstract","sections/abstract-en.html")); 
+      loads.push(_ls("#introduction","sections/introduction-en.html")); 
+      loads.push(_ls("#nstable","sections/ns-en.html")); 
+      loads.push(_ls("#overview","sections/overview-en.html")); 
+      loads.push(_ls("#description","sections/description-en.html")); 
+      loads.push(_ls("#references","sections/references-en.html")); 
+      loads.push(_ls("#crossref","sections/crossref-en.html")); 
+      $.when.apply($, loads).then(loadHash);
     });
     </script> 
   </head> 
@@ -75,34 +80,40 @@ function loadTOC(){
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
-<h1>Ontología EDINT Inmobiliaria</h1>
-<h2>Release: Date created</h2>
+<h1>EDINT Spanish Real Estate Listing Ontology</h1>
+<h2>Release: 2026-04-14</h2>
 
 
 <dl>
-<dt>Modified on: Date modified</dt>
+<dt>Modified on: 2026-05-26</dt>
 <dt>This version:</dt>
-<dd><a href="http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/0.1.0">http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/0.1.0</a></dd>
+<dd><a href="https://edint.es/def/oferta-inmobiliaria/0.2.1">https://edint.es/def/oferta-inmobiliaria/0.2.1</a></dd>
 <dt>Latest version:</dt>
-<dd><a href="http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/">http://vocab.linkeddata.es/datosabiertos/def/oferta-inmobiliaria/</a></dd>
+<dd><a href="https://edint.es/def/oferta-inmobiliaria">https://edint.es/def/oferta-inmobiliaria</a></dd>
+<dt>Previous version:</dt>
+<dd><a href="https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0">https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0</a></dd>
 <dt>Revision:</dt>
-<dd>0.1.0</dd>
+<dd>0.2.1</dd>
 <dt>Issued on:</dt>
-<dd>Date issued</dd>
+<dd>2026-05-26</dd>
 <dt>Authors:</dt>
-<dd>Daniel Doña, <a href="https://oeg.fi.upm.es/">Ontology Engineering Group, UPM</a></dd><dd>Edna Ruckhaus</dd><dd>Lucía Sánchez</dd><dd>Maria del Socorro Bernardos</dd><dd>Oscar Corcho</dd>
+<dd>Edna Ruckhaus, <a href="https://oeg.fi.upm.es/">Ontology Engineering Group, UPM</a></dd><dd>Daniel Doña, <a href="https://oeg.fi.upm.es/">Ontology Engineering Group, UPM</a></dd><dd>Lucía Sánchez, <a href="https://oeg.fi.upm.es/">Ontology Engineering Group, UPM</a></dd><dd>Maria del Socorro Bernardos, <a href="https://oeg.fi.upm.es/">Ontology Engineering Group, UPM</a></dd><dd>Oscar Corcho, <a href="https://oeg.fi.upm.es/">Ontology Engineering Group, UPM</a></dd>
 
 <dt>Publisher:</dt>
-<dd><a href="https://www.femp.es/">FEMP</a>, <a href="https://www.femp.es/">Federación Española de Municipios y Provincias</a></dd>
+<dd><a href="https://www.femp.es/">FEMP</a></dd>
 <dt>Imported Ontologies:</dt>
-<dd><a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/">EDINT Catastro</a></dd><dd><a href="http://www.opengis.net/ont/geosparql">GeoSPARQL</a></dd>
+<dd><a href="http://vocab.linkeddata.es/datosabiertos/def/catastro/">Spanish Cadastre (edintcat)</a></dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-Creative%20Commons%20Attribution%204.0%20International-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
-<a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">
-<img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" style="border-width:0" alt="License" />
-</a>
-<br/></dd><dt>SKOS Thesauri:</dt><dd><span><a href="kos/kos-en.html" target="_blank"> <img src="https://img.shields.io/badge/Format-HTML-blue.svg" alt="SKOS" /></a></span></dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Ontología EDINT Inmobiliaria. Revision: 0.1.0.</dd>
+<dt>Funding:</dt>
+<dd><a href="Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)">Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><dt>Tesauros SKOS:</dt>
+<dd><span><a href="kos/kos-es.html" target="_blank"> <img src="https://img.shields.io/badge/Format-HTML-blue.svg" alt="kos-es" /></a></span> <span><a href="kos/kos-en.html" target="_blank"> <img src="https://img.shields.io/badge/Format-HTML-blue.svg" alt="kos-en" /></a></span> </dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1.</dd>
+<dt>Vocabulary maintained at:</dt>
+<dd><a href="https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria">https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria</a></dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -118,6 +129,7 @@ function loadTOC(){
      <div id="description"></div>
      <div id="crossref"></div>
      <div id="references"></div>
+     <div id="changelog"></div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
