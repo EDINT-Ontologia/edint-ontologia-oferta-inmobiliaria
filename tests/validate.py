@@ -66,7 +66,7 @@ class ProjectPaths:
         self.tests_dir = project_root / "tests"
 
     def get_ontology_file(self) -> Path:
-        return self.ontology_dir / "inmobiliaria.ttl"
+        return self.ontology_dir / "ontology.owl"
 
     def get_kos_files(self) -> List[Path]:
         return sorted(self.kos_dir.glob("*.ttl"))
