@@ -82,7 +82,8 @@ def load_graph(file_path: Path, base_uri: Optional[str] = None) -> Optional[Grap
     """Load an RDF file into a graph. Returns None on error."""
     g = Graph()
     try:
-        g.parse(str(file_path), format="turtle")
+        fmt = "turtle" if file_path.suffix == ".ttl" else "xml"
+        g.parse(str(file_path), format=fmt)
         return g
     except BadSyntax as e:
         return None
