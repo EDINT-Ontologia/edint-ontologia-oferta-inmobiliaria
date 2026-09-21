@@ -12,8 +12,8 @@ WHERE {
            edintinm:transactionType ?transactionType .
   
   ?transactionType skos:prefLabel ?transactionLabel .
-  FILTER (STRLCASE(STR(?transactionLabel)) = "venta" || 
-         STRLCASE(STR(?transactionLabel)) = "sale")
+  FILTER (LCASE(STR(?transactionLabel)) = "venta" || 
+         LCASE(STR(?transactionLabel)) = "sale")
   
   OPTIONAL {
     ?propertyType rdfs:label ?propertyLabelEs .

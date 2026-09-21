@@ -1,7 +1,7 @@
 PREFIX edintinm: <https://edint.es/def/oferta-inmobiliaria#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-PREFIX catastro: <https://edint.github.io/edint-ontologia-catastro/ontology/catastro#>
+PREFIX catastro: <https://edint.es/def/catastro#>
 
 # CQ07: How is the location of a property specified?
 # SPANISH: ¿Cómo se especifica la ubicación de un inmueble?
