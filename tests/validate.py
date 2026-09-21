@@ -21,7 +21,7 @@ import pyshacl
 
 # Namespaces
 EDINTINM = Namespace("https://edint.es/def/oferta-inmobiliaria#")
-EDINTCAT = Namespace("https://edint.github.io/edint-ontologia-catastro/ontology/catastro#")
+EDINTCAT = Namespace("https://edint.es/def/catastro#")
 EDINTKOS = Namespace("https://edint.es/kos/")
 EDINTKOS_USE = Namespace("https://edint.es/kos/RealEstateUse/")
 EDINTKOS_TRANSACTION = Namespace("https://edint.es/kos/RealEstateTransactionType/")
