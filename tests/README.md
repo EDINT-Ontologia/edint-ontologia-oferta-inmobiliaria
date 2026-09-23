@@ -35,7 +35,7 @@ El script `validate.py` realiza las siguientes validaciones:
 
 Se pueden utilizar formatos como:
 - `.rq` — Ficheros de consultas SPARQL 
-- `.py`, `.sh`, `.ipynb` — Scripts para testeo autómatico 
+- `.py`, `.sh`, `.ipynb` — Scripts para testeo automático 
 - `.ttl`, `.rdf`, `.jsonld` — Datos de ejemplo 
 - `.md`, `.pdf` — Informes o documentación de los resultados de las pruebas 
 
