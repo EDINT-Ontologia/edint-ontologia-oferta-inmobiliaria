@@ -19,7 +19,7 @@
      xmlns:widoco="https://w3id.org/widoco/vocab#">
      <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
         <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria/0.2.1"/>
-        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+        <owl:imports rdf:resource="https://edint.es/def/catastro#"/>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -306,7 +306,7 @@
         <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
             <widoco:vocabularyLabel>
             <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/catastro#"/>
                 <rdfs:label xml:lang="es">Catastro Español (edintcat)</rdfs:label>
                 <rdfs:label xml:lang="en">Spanish Cadastre (edintcat)</rdfs:label>
             </rdf:Description>

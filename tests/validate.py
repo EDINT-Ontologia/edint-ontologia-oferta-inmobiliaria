@@ -21,7 +21,7 @@ import pyshacl
 
 # Namespaces
 EDINTINM = Namespace("https://edint.es/def/oferta-inmobiliaria#")
-EDINTCAT = Namespace("https://edint.github.io/edint-ontologia-catastro/ontology/catastro#")
+EDINTCAT = Namespace("https://edint.es/def/catastro#")
 EDINTKOS = Namespace("https://edint.es/kos/")
 EDINTKOS_USE = Namespace("https://edint.es/kos/RealEstateUse/")
 EDINTKOS_TRANSACTION = Namespace("https://edint.es/kos/RealEstateTransactionType/")
@@ -66,7 +66,7 @@ class ProjectPaths:
         self.tests_dir = project_root / "tests"
 
     def get_ontology_file(self) -> Path:
-        return self.ontology_dir / "inmobiliaria.ttl"
+        return self.ontology_dir / "ontology.owl"
 
     def get_kos_files(self) -> List[Path]:
         return sorted(self.kos_dir.glob("*.ttl"))
@@ -82,7 +82,8 @@ def load_graph(file_path: Path, base_uri: Optional[str] = None) -> Optional[Grap
     """Load an RDF file into a graph. Returns None on error."""
     g = Graph()
     try:
-        g.parse(str(file_path), format="turtle")
+        fmt = "turtle" if file_path.suffix == ".ttl" else "xml"
+        g.parse(str(file_path), format=fmt)
         return g
     except BadSyntax as e:
         return None
