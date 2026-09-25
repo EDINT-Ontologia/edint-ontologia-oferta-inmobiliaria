@@ -6,6 +6,7 @@
 @prefix edintkos-uso: <https://edint.es/kos/RealEstateUse/> .
 @prefix edintkos-trans: <https://edint.es/kos/RealEstateTransactionType/> .
 @prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 # Complete Listing Example: Multiple Properties and Transactions
 # Ejemplo Completo de Anuncio: Múltiples Propiedades y Transacciones
@@ -56,21 +57,29 @@ ex:Listing006 a edintinm:RealEstateListing ;
 
 # Cadastral Entities / Entidades Catastrales
 ex:CadastralProperty003 a catastro:CadastralProperty ;
+    rdfs:label "Propiedad catastral 003" ;
+    rdfs:label "Cadastral property 003"@en ;
     catastro:referenceCatastral "5556667CC7890D0003VA" ;
     catastro:hasAddress ex:Address003 ;
     geo:hasGeometry ex:Geometry003 .
 
 ex:CadastralProperty004 a catastro:CadastralProperty ;
+    rdfs:label "Propiedad catastral 004" ;
+    rdfs:label "Cadastral property 004"@en ;
     catastro:referenceCatastral "6667778DD8901E0004SE" ;
     catastro:hasAddress ex:Address004 ;
     geo:hasGeometry ex:Geometry004 .
 
 ex:CadastralProperty005 a catastro:CadastralProperty ;
+    rdfs:label "Propiedad catastral 005" ;
+    rdfs:label "Cadastral property 005"@en ;
     catastro:referenceCatastral "7778889EE9012F0005ZA" ;
     catastro:hasAddress ex:Address005 ;
     geo:hasGeometry ex:Geometry005 .
 
 ex:CadastralParcel001 a catastro:CadastralParcel ;
+    rdfs:label "Parcela catastral 001" ;
+    rdfs:label "Cadastral parcel 001"@en ;
     catastro:referenceCatastral "8889990FF0123G0006BI" ;
     geo:hasGeometry ex:Geometry006 .
 
