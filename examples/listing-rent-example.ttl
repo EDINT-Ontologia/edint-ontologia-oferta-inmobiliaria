@@ -6,6 +6,7 @@
 @prefix edintkos-uso: <https://edint.es/kos/RealEstateUse/> .
 @prefix edintkos-trans: <https://edint.es/kos/RealEstateTransactionType/> .
 @prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 # Rent Listing Example: Commercial Local
 # Ejemplo de Anuncio de Alquiler: Local Comercial
@@ -20,6 +21,8 @@ ex:Listing002 a edintinm:RealEstateListing ;
     edintinm:refersToCadastralEntity ex:CadastralProperty002 .
 
 ex:CadastralProperty002 a catastro:CadastralProperty ;
+    rdfs:label "Propiedad catastral 002" ;
+    rdfs:label "Cadastral property 002"@en ;
     catastro:referenceCatastral "1234567AB8901B0002ZA" ;
     catastro:hasAddress ex:Address002 ;
     geo:hasGeometry ex:Geometry002 .
