@@ -42,7 +42,7 @@
         </dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</dcterms:title>
         <rdfs:label xml:lang="es">Oferta Inmobiliaria</rdfs:label>
