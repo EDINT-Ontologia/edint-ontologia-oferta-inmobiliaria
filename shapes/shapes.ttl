@@ -1,0 +1,101 @@
+@prefix : <https://edint.es/def/oferta-inmobiliaria#> .
+@prefix edintcat: <https://edint.es/def/catastro#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#00a40b443b9fac7129bc30928aeb47ee> rdfs:label "Relationship linking a real estate listing to its corresponding cadastral entity (parcel or property). This allows access to cadastral information such as use, class, address, and reference through the Cadastre ontology. For land-only sales, it links to a CadastralParcel. For buildings or units, it links to a CadastralProperty."@en,
+        "refers to cadastral entity"@en,
+        "Relación que vincula un anuncio inmobiliario con su entidad catastral correspondiente (parcela o inmueble). Esto permite acceder a información catastral como el uso, la clase, la dirección y la referencia a través de la ontología del Catastro. Para ventas de solo terreno, se enlaza a una CadastralParcel. Para edificios o unidades, se enlaza a una CadastralProperty."@es,
+        "se refiere a entidad catastral"@es ;
+    rdfs:isDefinedBy : ;
+    sh:description "Relationship linking a real estate listing to its corresponding cadastral entity (parcel or property). This allows access to cadastral information such as use, class, address, and reference through the Cadastre ontology. For land-only sales, it links to a CadastralParcel. For buildings or units, it links to a CadastralProperty."@en,
+        "Relación que vincula un anuncio inmobiliario con su entidad catastral correspondiente (parcela o inmueble). Esto permite acceder a información catastral como el uso, la clase, la dirección y la referencia a través de la ontología del Catastro. Para ventas de solo terreno, se enlaza a una CadastralParcel. Para edificios o unidades, se enlaza a una CadastralProperty."@es ;
+    sh:name "refers to cadastral entity"@en,
+        "se refiere a entidad catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:or ( [ sh:class edintcat:CadastralParcel ;
+                sh:path :refersToCadastralEntity ] [ sh:class edintcat:CadastralProperty ;
+                sh:path :refersToCadastralEntity ] ) .
+
+<https://astrea.linkeddata.es/shapes#3398ed0391751bb3a09e0aed51fffdb6> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintcat:CadastralProperty .
+
+<https://astrea.linkeddata.es/shapes#9abab679d9704dd4b7c9ec7cea7f8bfb> a sh:NodeShape ;
+    rdfs:label "Real Estate Listing"@en,
+        "Anuncio Inmobiliario"@es ;
+    rdfs:isDefinedBy : ;
+    sh:description "A real estate listing representing an offer for a property (sale, rent, or transfer). Each listing has a unique identifier and describes the property type, transaction type, and current status."@en,
+        "Un anuncio inmobiliario que representa una oferta de un inmueble (venta, alquiler o traspaso). Cada anuncio tiene un identificador único y describe el tipo de inmueble, tipo de transacción y estado actual."@es ;
+    sh:name "Real Estate Listing"@en,
+        "Anuncio Inmobiliario"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#10cf602d32dacdb599dacf719a0276f2>,
+        <https://astrea.linkeddata.es/shapes#39ee0146c39855391ad68d2c14018b93>,
+        <https://astrea.linkeddata.es/shapes#72b7d3748055f72b1d088d7f868ae675>,
+        <https://astrea.linkeddata.es/shapes#e7aacf2faf90afc51d000ecef89f4e19> ;
+    sh:targetClass :RealEstateListing .
+
+<https://astrea.linkeddata.es/shapes#9d89b27e37b1c0e86e24c55d42749f18> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass edintcat:CadastralParcel .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
+<https://astrea.linkeddata.es/shapes#10cf602d32dacdb599dacf719a0276f2> a sh:PropertyShape ;
+    rdfs:label "Property indicating whether the real estate listing is currently active (true) or inactive (false)."@en,
+        "is active"@en,
+        "Propiedad que indica si el anuncio inmobiliario está actualmente activo (verdadero) o inactivo (falso)."@es,
+        "está activo"@es ;
+    rdfs:isDefinedBy : ;
+    sh:datatype xsd:boolean ;
+    sh:description "Property indicating whether the real estate listing is currently active (true) or inactive (false)."@en,
+        "Propiedad que indica si el anuncio inmobiliario está actualmente activo (verdadero) o inactivo (falso)."@es ;
+    sh:name "is active"@en,
+        "está activo"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :isActive ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#39ee0146c39855391ad68d2c14018b93> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path :propertyType ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class skos:Concept ] .
+
+<https://astrea.linkeddata.es/shapes#72b7d3748055f72b1d088d7f868ae675> a sh:PropertyShape ;
+    rdfs:label "Property Type"@en,
+        "Property indicating the type of real estate property in the listing (e.g., local, office, warehouse, dwelling, plot). Reuses the Spanish Cadastre use vocabulary."@en,
+        "Propiedad que indica el tipo de inmueble en el anuncio (ej. local, oficina, nave, vivienda, solar). Reutiliza el vocabulario de usos del Catastro Español."@es,
+        "Tipo de Inmueble"@es ;
+    rdfs:isDefinedBy : ;
+    sh:class skos:Concept ;
+    sh:description "Property indicating the type of real estate property in the listing (e.g., local, office, warehouse, dwelling, plot). Reuses the Spanish Cadastre use vocabulary."@en,
+        "Propiedad que indica el tipo de inmueble en el anuncio (ej. local, oficina, nave, vivienda, solar). Reutiliza el vocabulario de usos del Catastro Español."@es ;
+    sh:name "Property Type"@en,
+        "Tipo de Inmueble"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :propertyType .
+
+<https://astrea.linkeddata.es/shapes#e7aacf2faf90afc51d000ecef89f4e19> a sh:PropertyShape ;
+    rdfs:label "Property indicating type of real estate transaction (sale, rent, or transfer). Uses the transaction type controlled vocabulary."@en,
+        "Transaction Type"@en,
+        "Propiedad que indica el tipo de transacción inmobiliaria (venta, alquiler o traspaso). Utiliza el vocabulario controlado de tipos de transacción."@es,
+        "Tipo de Transacción"@es ;
+    rdfs:isDefinedBy : ;
+    sh:class skos:Concept ;
+    sh:description "Property indicating type of real estate transaction (sale, rent, or transfer). Uses the transaction type controlled vocabulary."@en,
+        "Propiedad que indica el tipo de transacción inmobiliaria (venta, alquiler o traspaso). Utiliza el vocabulario controlado de tipos de transacción."@es ;
+    sh:name "Transaction Type"@en,
+        "Tipo de Transacción"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :transactionType .
+
