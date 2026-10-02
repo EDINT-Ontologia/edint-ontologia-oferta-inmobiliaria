@@ -42,7 +42,7 @@
         </dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</dcterms:title>
         <rdfs:label xml:lang="es">Oferta Inmobiliaria</rdfs:label>
@@ -66,6 +66,17 @@
         <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
         <dcterms:abstract xml:lang="es">Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</dcterms:abstract>
         <dcterms:abstract xml:lang="en">EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.</dcterms:abstract>
+            <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
+        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
+        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
+        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
+            <widoco:vocabularyLabel>
+            <rdf:Description>
+                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/catastro#"/>
+                <rdfs:label xml:lang="es">Catastro Español (edintcat)</rdfs:label>
+                <rdfs:label xml:lang="en">Spanish Cadastre (edintcat)</rdfs:label>
+            </rdf:Description>
+        </widoco:vocabularyLabel>
     </owl:Ontology>
     <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
         <foaf:name>Ontology Engineering Group, UPM</foaf:name>
@@ -299,19 +310,7 @@
         <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </rdf:Description>
     <!-- Nombres de fichero de las serializaciones generadas (vocabulario Widoco) -->
-    <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria#">
-        <widoco:rdfxmlSerialization>ontology.rdf</widoco:rdfxmlSerialization>
-        <widoco:turtleSerialization>ontology.ttl</widoco:turtleSerialization>
-        <widoco:ntSerialization>ontology.nt</widoco:ntSerialization>
-        <widoco:jsonldSerialization>ontology.jsonld</widoco:jsonldSerialization>
-            <widoco:vocabularyLabel>
-            <rdf:Description>
-                <widoco:vocabularyIRI rdf:resource="https://edint.es/def/catastro#"/>
-                <rdfs:label xml:lang="es">Catastro Español (edintcat)</rdfs:label>
-                <rdfs:label xml:lang="en">Spanish Cadastre (edintcat)</rdfs:label>
-            </rdf:Description>
-        </widoco:vocabularyLabel>
-</owl:Ontology>
+    
 </rdf:RDF>
 
 

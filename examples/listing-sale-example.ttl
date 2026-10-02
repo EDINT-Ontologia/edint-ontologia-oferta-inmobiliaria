@@ -6,6 +6,7 @@
 @prefix edintkos-uso: <https://edint.es/kos/RealEstateUse/> .
 @prefix edintkos-trans: <https://edint.es/kos/RealEstateTransactionType/> .
 @prefix ex: <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 # Sale Listing Example: Residential Dwelling
 # Ejemplo de Anuncio de Venta: Vivienda Residencial
@@ -20,6 +21,8 @@ ex:Listing001 a edintinm:RealEstateListing ;
     edintinm:refersToCadastralEntity ex:CadastralProperty001 .
 
 ex:CadastralProperty001 a catastro:CadastralProperty ;
+    rdfs:label "Propiedad catastral 001" ;
+    rdfs:label "Cadastral property 001"@en ;
     catastro:referenceCatastral "9876543BC4567N0001WO" ;
     catastro:hasAddress ex:Address001 ;
     geo:hasGeometry ex:Geometry001 .
