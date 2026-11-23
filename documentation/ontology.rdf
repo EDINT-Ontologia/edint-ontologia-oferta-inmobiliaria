@@ -1,18 +1,23 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/catastro/"
+<rdf:RDF xmlns="https://edint.es/def/oferta-inmobiliaria#"
+     xml:base="https://edint.es/def/oferta-inmobiliaria"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prez="https://prez.dev/"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="https://w3id.org/widoco/vocab#"
      xmlns:schema="https://schema.org/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/">
-        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+    <owl:Ontology rdf:about="https://edint.es/def/oferta-inmobiliaria">
+        <owl:versionIRI rdf:resource="https://edint.es/def/oferta-inmobiliaria/0.2.1"/>
+        <owl:imports rdf:resource="https://edint.es/def/catastro#"/>
         <terms:abstract xml:lang="en">EDINT ontology for modelling real estate listings in the Spanish context, including property offers (sale, rent, transfer). It integrates with the Spanish Cadastre ontology.</terms:abstract>
         <terms:abstract xml:lang="es">Ontología EDINT para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</terms:abstract>
         <terms:bibliographicCitation xml:lang="en">EDINT Spanish Real Estate Listing Ontology. EDINT. Revision: v0.2.1.</terms:bibliographicCitation>
@@ -26,13 +31,13 @@
         <terms:description xml:lang="en">Ontology for modeling real estate listings in the Spanish context, including property offers (sale, rent, transfer). Integrates with the Spanish Cadastre ontology.</terms:description>
         <terms:description xml:lang="es">Ontología para modelar ofertas inmobiliarias en el contexto español, incluyendo ofertas de inmuebles (venta, alquiler, traspaso). Se integra con la ontología del Catastro Español.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-26</terms:modified>
         <terms:publisher rdf:nodeID="genid6"/>
         <terms:title xml:lang="en">EDINT Spanish Real Estate Listing Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Oferta Inmobiliaria Española</terms:title>
         <vann:preferredNamespacePrefix>edintinm</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/oferta-inmobiliaria#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/oferta-inmobiliaria#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Oferta Inmobiliaria</rdfs:label>
         <rdfs:label xml:lang="en">Real Estate Listings</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-oferta-inmobiliaria/releases/tag/v0.2.0"/>
@@ -47,11 +52,11 @@
         <vocab:vocabularyLabel rdf:nodeID="genid7"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
-        <foaf:name>Edna Ruckhaus</foaf:name>
+        <foaf:name>Daniel Doña</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
-        <foaf:name>Daniel Doña</foaf:name>
+        <foaf:name>Edna Ruckhaus</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
@@ -74,7 +79,7 @@
     <rdf:Description rdf:nodeID="genid7">
         <rdfs:label xml:lang="es">Catastro Español (edintcat)</rdfs:label>
         <rdfs:label xml:lang="en">Spanish Cadastre (edintcat)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/"/>
+        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/catastro#"/>
     </rdf:Description>
     
 
@@ -88,20 +93,6 @@
      -->
 
 
-    
-
-
-    <!-- http://purl.org/dc/terms/abstract -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/bibliographicCitation -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -154,13 +145,6 @@
     
 
 
-    <!-- http://purl.org/dc/terms/publisher -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
-
-
     <!-- http://purl.org/dc/terms/title -->
 
 
@@ -186,90 +170,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/homepage -->
-
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-    
-
-
-    <!-- https://schema.org/affiliation -->
-
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
-    
-
-
-    <!-- https://schema.org/codeRepository -->
-
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
-    
-
-
-    <!-- https://schema.org/creativeWorkStatus -->
-
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
-    
-
-
-    <!-- https://schema.org/funding -->
-
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
-    
-
-
-    <!-- https://w3id.org/widoco/vocab#jsonldSerialization -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#jsonldSerialization"/>
-    
-
-
-    <!-- https://w3id.org/widoco/vocab#ntSerialization -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#ntSerialization"/>
-    
-
-
-    <!-- https://w3id.org/widoco/vocab#rdfxmlSerialization -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#rdfxmlSerialization"/>
-    
-
-
-    <!-- https://w3id.org/widoco/vocab#turtleSerialization -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#turtleSerialization"/>
-    
-
-
-    <!-- https://w3id.org/widoco/vocab#vocabularyIRI -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyIRI"/>
-    
-
-
-    <!-- https://w3id.org/widoco/vocab#vocabularyLabel -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#vocabularyLabel"/>
     
 
 
@@ -327,8 +227,8 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel"/>
-                    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -395,24 +295,24 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralProperty"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://edint.es/def/catastro#CadastralParcel -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
+    
+
+
+    <!-- https://edint.es/def/catastro#CadastralProperty -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
     
 
 
