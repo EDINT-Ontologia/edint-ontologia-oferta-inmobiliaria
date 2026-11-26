@@ -16,7 +16,7 @@
 edintkos:RealEstateUse a skos:ConceptScheme ;
     dct:issued "2026-04-14"^^xsd:date ;
     dct:modified "2026-04-14"^^xsd:date ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     rdfs:label "Uso de Inmuebles del Catastro Español"@es ;
     rdfs:label "Spanish Cadastre Property Uses"@en ;
     skos:definition "Esquema de conceptos que define los usos de inmuebles según el Catastro Español."@es ;

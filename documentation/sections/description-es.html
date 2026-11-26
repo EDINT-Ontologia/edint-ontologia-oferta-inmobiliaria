@@ -25,7 +25,8 @@ Un ejemplo de entidad definida por la ontolog&iacute;a podr&iacute;a ser el sigu
 @prefix edintkos-uso: &lt;https://edint.es/kos/RealEstateUse/&gt; .
 @prefix edintkos-trans: &lt;https://edint.es/kos/RealEstateTransactionType/&gt; .
 @prefix catastro: &lt;https://edint.es/def/catastro#&gt; .
-@prefix ex: &lt;http://example.org/&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix ex: &lt;https://example.org/&gt; .
 
 # ---------------------------------------------------------------------------
 # ANUNCIO INMOBILIARIO
@@ -45,20 +46,19 @@ ex:Listing001 a edintinm:RealEstateListing ;
 # ---------------------------------------------------------------------------
 
 ex:CadastralProperty001 a catastro:CadastralProperty ;
-    catastro:referenceCatastral "9876543BC4567N0001WO" ;
-    catastro:hasAddress ex:Address001 ;
+    catastro:propertyReference "9876543BC4567N0001WO" ;
+    schema:address ex:Address001 ;
     gsp:hasGeometry ex:Geometry001 .
 
 # ---------------------------------------------------------------------------
 # DIRECCI&Oacute;N
 # ---------------------------------------------------------------------------
 
-ex:Address001 a catastro:Address ;
-    catastro:roadName "Calle Mayor" ;
-    catastro:roadNumber "15" ;
-    catastro:zipCode "28013" ;
-    catastro:city "Madrid" ;
-    catastro:province "Madrid" .
+ex:Address001 a schema:PostalAddress ;
+    schema:streetAddress "Calle Mayor 15" ;
+    schema:postalCode "28013" ;
+    schema:addressLocality "Madrid" ;
+    schema:addressRegion "Madrid" .
 
 # ---------------------------------------------------------------------------
 # GEOMETR&Iacute;A (POL&Iacute;GONO - HUELLA DEL EDIFICIO)

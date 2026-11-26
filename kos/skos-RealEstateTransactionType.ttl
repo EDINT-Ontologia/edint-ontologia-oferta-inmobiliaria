@@ -15,7 +15,7 @@
 edintkos:RealEstateTransactionType a skos:ConceptScheme ;
     dct:issued "2026-04-14"^^xsd:date ;
     dct:modified "2026-04-14"^^xsd:date ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
     rdfs:label "Tipos de Transacción Inmobiliaria"@es ;
     rdfs:label "Real Estate Transaction Types"@en ;
     skos:definition "Esquema de conceptos que define los tipos de transacción inmobiliaria en el contexto español."@es ;

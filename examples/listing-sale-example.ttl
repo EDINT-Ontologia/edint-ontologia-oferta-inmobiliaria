@@ -5,7 +5,7 @@
 @prefix catastro: <https://edint.es/def/catastro#> .
 @prefix edintkos-uso: <https://edint.es/kos/RealEstateUse/> .
 @prefix edintkos-trans: <https://edint.es/kos/RealEstateTransactionType/> .
-@prefix ex: <http://example.org/> .
+@prefix ex: <https://example.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 # Sale Listing Example: Residential Dwelling
